@@ -3,27 +3,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <nav><pre><h1><a href="home.html">HOME</a> | <a href="about.html">ABOUT US</a> | <a href="contact.html">CONTACT US</a> |
-    </h1></pre></nav>
-    <header></header>
-    <form action="#">
-        First Name: <input type="text" placeholder="first name"><br>
-        Last Name: <input type="text" placeholder="last name"><br>
+    <nav>
+        <a href="contact.html" style="margin-left: 5%; color: magenta;" >Contact Us</a>
+        <a href="home.html" style="margin-left: 35%; color: magenta;" >Home</a>
+        <a href="about.html" style="float: right; margin-right: 5%; color: magenta;" >About Us</a>
+    </nav>
+    <div><header><img src="contact.png" alt=""><br></header>
+    <form action="#" method="POST" style="margin-top: 2%;">
+        First Name: <input type="text" placeholder="enter your first name"><br>
+        Last Name: <input type="text" placeholder="enter your last name"><br>
         Gender: <select name="Gender" id="">Male
             <option value="#">select</option>
             <option value="male">Male</option>
             <option value="female">Female</option>
             <option value="others">Other</option>
         </select><br>
-        E- mail <input type="email" placeholder="email"><br>
+        E- mail <input type="email" placeholder="enter your email"><br>
         Password <input type="password" placeholder="create a new password"><br>
-        Fresher<input type="checkbox">
-        Experience <input type="checkbox"> 
-        <input type="file" name="" id="">
-        </form>
-        <img src="log.jpg" alt=""><br>
+        <textarea name="" id="" cols="20" rows="6"placeholder="Enter your feedback here"></textarea><br>
+        Fresher<input type="radio" name="radio">
+        Experienced <input type="radio" name="radio"> <br><br>
+        Upload a file <input type="file" name="" id=""><br><br>
+        <button type="submit" onclick="alert('form submitted')">Submit</button>
+    </form>
+    </div>
 </body>
 </html>
